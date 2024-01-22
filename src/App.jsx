@@ -1,5 +1,7 @@
 import React, { useRef, useState, } from 'react'
 import Card from './Card';
+import Navbar from './components/Navbar';
+import Check from './components/Check';
 
 const App = () => {
 
@@ -29,6 +31,9 @@ const App = () => {
 
   return (
     <>
+        <Navbar />
+        {/* <Check title='Hello World' /> */}
+        <Check>Hello World</Check>
         <h1>Todo App</h1>
         <form onSubmit={addTodo}>
           <input type="text" ref={todoVAl} placeholder='Enter Todo' />
