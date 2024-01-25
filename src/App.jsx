@@ -33,7 +33,7 @@ const App = () => {
     <>
         <Navbar />
         {/* <Check title='Hello World' /> */}
-        <Check>Hello World</Check>
+        {/* <Check>Hello World</Check> */}
         <h1>Todo App</h1>
         <form onSubmit={addTodo}>
           <input type="text" ref={todoVAl} placeholder='Enter Todo' />
